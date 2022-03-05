@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ibltrm &verbar; thrift store </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img src="logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="products.html">Produtos</a></li>
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="my-account.html">Minha Conta</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="cart_icon.png" width="30px" height="30px" class="cart-icon"></a>
+                <img src="menu_icon.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <div class="main1">
+            <div class="column">
+                <div class="col-2">
+                    <h1>Livros, roupas, acessórios<br> e muito mais!</h1>
+
+                    <p> <a href="products.html" class="btn">Conferir &#8594;</a></p>
+                </div>
+            </div>
+        </div>
+        <!-----DESTAQUES----->
+        <div class="categories">
+            <div class="small-container">
+                <h2 class="title"> Destaques em livros </h2>
+                <div class="column2">
+                    <div class="col-3">
+                        <img src="img1.jpg">
+                        <h4>A Culpa é das Estrelas</h4>
+                        <p>R&#36;29,99</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="img2.jpg">
+                        <h4>Cidades de Papel</h4>
+                        <p>R&#36;36,99</p>
+                    </div>
+                    <div class="col-3"> <img src="img3.jpg">
+                        <h4>O Theorema Katherine</h4>
+                        <p>R&#36;34,99</p>
+                    </div>
+                    <div class="col-3"> <img src="img4.jpg">
+                        <h4>As Vantagens de ser Invisível</h4>
+                        <p>R&#36;39,99</p>
+                    </div>
+                    <div class="col-3"> <img src="img5.jpg">
+                        <h4>Como eu era antes de você</h4>
+                        <p>R&#36;32,99</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-----RECÉM ADICIONADOS----->
+
+
+        <div class="small-container">
+            <h2 class="title">Recém adicionados</h2>
+
+            <div class="column">
+                <div class="col-4">
+                    <img src="clothes1.jpg">
+                    <h4>Bucket hat</h4>
+                    <p>R&#36;42,90</p>
+                </div>
+                <div class="col-4">
+                    <img src="clothes2.jpg">
+                    <h4>Top cropped de retilínea tweed</h4>
+                    <p>R&#36;79,99</p>
+                </div>
+                <div class="col-4">
+                    <img src="clothes3.jpg">
+                    <h4>Blusa cropped manga longa</h4>
+                    <p>R&#36;109,90</p>
+                </div>
+                <div class="col-4">
+                    <img src="clothes4.jpg">
+                    <h4>Blusa cropped Minnie</h4>
+                    <p>R&#36;69,99</p>
+                </div>
+                <div class="col-4">
+                    <img src="clothes5.jpg">
+                    <h4>Kit 4 anéis coloridos</h4>
+                    <p>R&#36;39,99</p>
+                </div>
+                <div class="col-4">
+                    <img src="clothes6.jpg">
+                    <h4>Moletom gola alta off-white</h4>
+                    <p>R&#36;129,90</p>
+                </div>
+                <div class="col-4">
+                    <img src="clothes7.jpg">
+                    <h4>Calça jeans azul oversized</h4>
+                    <p>R&#36;179,99</p>
+                </div>
+                <div class="col-4">
+                    <img src="clothes8.jpg">
+                    <h4>Calça oversized verde militar</h4>
+                    <p>R&#36;239,90</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="column">
+                <div class="footer-column">
+                    <h3>Me acompanhe pelo Instagram&excl;</h3>
+                    <p>Por lá anunciarei em primeira mão as novidades e atualizações. Dessa forma, você ficará por dentro de tudo!</p>
+                    <a href="https://www.instagram.com/ibltrm/" class=""><img src="instagram.png" width="30px" height="30px" class="instagram_icon"> </a>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; ibltrm, 2022 </p>
+        </div>
+
+    </footer>
+
+    <!-----JAVASCRIPT----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>

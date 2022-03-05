@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ibltrm &verbar; thrift store </title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img src="logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="products.html">Produtos</a></li>
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="my-account.html">Minha Conta</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="cart_icon.png" width="30px" height="30px" class="cart-icon"></a>
+                <img src="menu_icon.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <div class="main1">
+            <div class="column">
+                <div class="col-2">
+                    <p> Como todo brechó, o intuito da Ibltrm Thrift Store é poder dar continuidade ao uso de itens que poderiam ir parar no lixo, mas que, ao invés disso, passarão para pessoas que tem interesse nos mesmos, evitando que o meio ambiente seja
+                        exposto a mais materiais difíceis de se decompor. </p>
+                </div>
+                <div class="col-2">
+                    <h3>Por que apoiar brechós&quest;</h3>
+                    <p>O relatório do Global Fashion Agenda e The Boston Consulting Group mostrou que apenas 20% do lixo de roupas é coletado para reuso e reciclagem, enquanto que o restante para nos aterros sanitários ou é incinerado. Diante dos efeitos
+                        no planeta, como reduzir impactos e consumir de forma consciente? O brechó pode ser o seu primeiro passo para uma vida mais sustentável.</p>
+                    <p>Além disso, ao optar por comprar de um brechó, menos roupas serão produzidas nas fábricas têxteis, isso faz com que menos substâncias tóxicas sejam despejadas no meio ambiente. Ao final, você auxilia de duas formas a proteger o planeta
+                        Terra. </p>
+                </div>
+                <div class="col-2">
+                    <h3>Troca e Devolução</h3>
+                    <p>A Ibltrm Thrift Store é um brechó online. Consequentemente, não é permitido provar as peças. Também não será realizada a troca e/ou devolução dos itens. Apesar disso, me disponibilizarei para esclarecer dúvidas com o máximo de precisão
+                        nas informações para que se sinta seguro ao realizar a compra e não ocorra problemas ao receber o produto.</p>
+                    <div class="col-2">
+                        <h4> Criado e administrado por Isabella Beltrame.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="column">
+
+                <div class="footer-column">
+                    <h3>Me acompanhe pelo Instagram&excl;</h3>
+                    <p>Por lá anunciarei em primeira mão as novidades e atualizações. Dessa forma, você ficará por dentro de tudo!</p>
+                    <a href="https://www.instagram.com/ibltrm/" class=""><img src="instagram.png" width="30px" height="30px" class="instagram_icon"> </a>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; ibltrm, 2022</p>
+        </div>
+
+    </footer>
+
+    <!-----JAVASCRIPT----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>

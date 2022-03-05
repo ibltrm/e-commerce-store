@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ibltrm &verbar; thrift store </title>
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img src="logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="products.html">Produtos</a></li>
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="my-account.html">Minha Conta</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="cart_icon.png" width="30px" height="30px" class="cart-icon"></a>
+                <img src="menu_icon.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+    </header>
+
+    <main>
+        <div class="container1">
+            <!--h2 class="title">Carrinho</h2>
+            <hr class="hr"-->
+            <div class=""></div>
+            <div class="cart-info">
+                <p>Item</p>
+            </div>
+            <!--div class="cart-info">
+                <ul>
+                        <li class="col-1">
+                        </li>
+                        <li class="col-2">Preço</li>
+                    <li class="col-3">Subtotal</li>
+                    </ul>
+        </div-->
+
+            <div class="cart">
+                <div class="products">
+                    <div class="product">
+                        <img src="clothes2.jpg">
+                        <div class="product-info">
+                            <h3 class="product-name">Top cropped de retilínea tweed</h3>
+                            <p>Cor: Bege</p>
+                            <p>Tamanho: PP</p>
+                            <div class="price">
+                                <p>R&#36;79,99</p>
+                            </div>
+                            <div class="product-remove">
+                                <a href="">
+                                    <p>Remover</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products">
+                        <div class="product">
+                            <img src="clothes7.jpg">
+                            <div class="product-info">
+                                <h3 class="product-name">Calça jeans azul oversized</h3>
+                                <p>Cor: Azul claro</p>
+                                <p>Tamanho: 34</p>
+                                <div class="price">
+                                    <p>R&#36;179,99</p>
+                                </div>
+                                <div class="product-remove">
+                                    <a href="">
+                                        <p>Remover</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products">
+                            <div class="product">
+                                <img src="clothes5.jpg">
+                                <div class="product-info">
+                                    <h3 class="product-name">Kit 4 anéis coloridos</h3>
+                                    <p>Cor: Prata e dourado</p>
+                                    <p>Tamanho: M</p>
+                                    <div class="price">
+                                        <p>R&#36;79,99</p>
+                                    </div>
+                                    <div class="product-remove">
+                                        <a href="">
+                                            <p>Remover</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="final-review">
+                            <div class="delivery-options">
+                                <h2>Calcular Frete</h2>
+                                <input class="postal-code" size="8" maxlength="9" type="tel" value="">
+                                <!--input class="shipping-calc" value="Calcular" type="submit"-->
+                                <button class="shipping-calc" title="Calcular">
+                                    <a href="">
+                                        Calcular
+                                    </a>
+                            </button>
+                            </div>
+                            <div class="cart-total">
+                                <p>
+                                    <span>Subtotal</span>
+                                    <span><b>R&#36;299,97</b></span>
+                                    <hr class="hr">
+                                </p>
+
+                                <p>
+                                    <span>Total do pedido</span>
+                                    <span><b>R&#36;299,97</b></span>
+                                </p>
+
+
+                                <a href="#">Finalizar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="column">
+
+                <div class="footer-column">
+                    <h3>Me acompanhe pelo Instagram&excl;</h3>
+                    <p>Por lá anunciarei em primeira mão as novidades e atualizações. Dessa forma, você ficará por dentro de tudo!</p>
+                    <a href="https://www.instagram.com/ibltrm/" class=""><img src="instagram.png" width="30px" height="30px" class="instagram_icon"> </a>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; ibltrm, 2022</p>
+        </div>
+
+    </footer>
+
+    <!-----JAVASCRIPT----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>

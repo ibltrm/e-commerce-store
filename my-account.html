@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ibltrm &verbar; thrift store </title>
+    <link rel="stylesheet" href="my-account.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img src="logo.png" width="125px"> </a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="products.html">Produtos</a></li>
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="my-account.html">Minha Conta</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="cart_icon.png" width="30px" height="30px" class="cart-icon"></a>
+                <img src="menu_icon.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+
+        <div class="my-account">
+            <div class="container">
+                <div class="column">
+                    <!--div class="col-2">
+                        <img src="account-icon.png" width="100%">
+                    </div-->
+                    <div class="col-2">
+                        <div class="login-container">
+                            <div class="login-btn">
+                                <span>Entre ou Cadastre&hyphen;se</span>
+                            </div>
+                            <form>
+                                <input type="text" class="info-container" placeholder="Email">
+                                <input type="password" class="info-container" placeholder="Senha">
+                                <button type="submit" class="btn">Entrar</button>
+                                <br>
+                                <a href="">Esqueci minha senha</a>
+                            </form>
+                            <br>
+                            <br>
+
+                            <form>
+                                <input type="text" class="info-container" placeholder="Nome completo">
+                                <input type="email" class="info-container" placeholder="E-mail">
+                                <input type="password" class="info-container" placeholder="Senha">
+                                <button type="submit" class="btn">Criar conta</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="column">
+
+                <div class="footer-column">
+                    <h3>Me acompanhe pelo Instagram&excl;</h3>
+                    <p>Por lá anunciarei em primeira mão as novidades e atualizações. Dessa forma, você ficará por dentro de tudo!</p>
+                    <a href="https://www.instagram.com/ibltrm/" class=""><img src="instagram.png" width="30px" height="30px" class="instagram_icon"> </a>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; ibltrm, 2022</p>
+        </div>
+
+    </footer>
+
+    <!-----JAVASCRIPT----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
